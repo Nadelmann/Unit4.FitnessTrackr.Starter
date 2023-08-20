@@ -26,7 +26,7 @@ router.get('/', async (req, res, next) => {
     const activities = await getAllActivities();
     res.send(activities);
   } catch (error) {
-    next(error)
+    next(error);
   }
 })
 
